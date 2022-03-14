@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f1f5f8;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+/* Search  */
+.section-search {
+  margin-top: 15px;
+  padding-bottom: 0;
+}
+
+.search-form {
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 40rem;
+  background: #fff;
+  padding: 30px 40px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #476a2e;
+  font-size: 22px;
+}
+.form-control input {
+  width: 100%;
+  border: none;
+  border-color: transparent;
+  background: #ececec;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 20px;
+}
+/*  */
+.loading {
+  font-size: 35px;
+  text-align: center;
+  color: #476a2e;
+}
+
+.section-title {
+  color: #476a2e;
+  text-transform: capitalize;
+}
+.section-agents {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.single-agent {
+  background: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.single-agent p,
+h4,
+h3 {
+  color: #fff;
+}
+.agent-info {
+  padding: 30px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #d03f2f;
+  box-shadow: inset 0px -4px 0px #93261a;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+/* estate */
+
+.estate {
+  width: 300px;
+  margin: 50px;
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+}
+.estate-item {
+  background: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+  border-radius: 10px;
+}
+.estate-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 10px;
+  align-items: center;
+}
+.estate-info p {
+  color: #fff;
+}
+
+.error {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.error h3 {
+  font-size: 35px;
+  text-align: center;
+  color: #476a2e;
+}
+
+@media only screen and (max-width: 710px) {
+  .section-agents {
+    grid-template-columns: 1fr;
+  }
+}
